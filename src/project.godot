@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="callate_los_ojos"
-run/main_scene="res://Escenas/EscenaPrincipal.tscn"
+run/main_scene="res://Escenas/EscenaMenu.tscn"
 config/icon="res://icon.png"
 
 [rendering]
