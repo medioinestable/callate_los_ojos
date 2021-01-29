@@ -1,0 +1,25 @@
+[gd_scene format=2]
+
+[node name="MenuInicio" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_top = 2.0
+margin_right = 1.0
+margin_bottom = 2.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 281.0
+margin_top = 115.0
+margin_right = 681.0
+margin_bottom = 261.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 413.0
+margin_top = 318.0
+margin_right = 626.0
+margin_bottom = 458.0
+text = "menu inicio"
