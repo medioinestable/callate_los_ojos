@@ -16,10 +16,16 @@ func _ready():
 #	pass
 func _input(ev):
 	if Input.is_key_pressed(KEY_ESCAPE):
-		print(escape)
-		escape = (escape+1)%2
+		
+		escape = (escape+1)%2	
+		if escape == 0:
+			get_tree().paused = true
+			$'.'.show()
+			$menu_pausa_ui/boton_continuar.grab_focus()	
 		if escape == 1:
-			get_tree().quit()
+			print(escape)
+			get_tree().paused = false
+			$".".hide()
 
 func _on_boton_continuar_pressed():
 	print('continuar')

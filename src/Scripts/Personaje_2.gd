@@ -16,16 +16,16 @@ func _ready():
 func get_input():
 	velocity = Vector2()
 	
-	if Input.is_action_pressed("ui_right"):
+	if Input.is_action_pressed("2p_right"):
 		velocity.x += 1
 		$AnimatedSprite.animation = 'moviendose'
-	if Input.is_action_pressed("ui_left"):
+	if Input.is_action_pressed("2p_left"):
 		velocity.x -= 1
 		$AnimatedSprite.animation = 'moviendose'
-	if Input.is_action_pressed("ui_up"):
+	if Input.is_action_pressed("2p_up"):
 		velocity.y -= 1
 		$AnimatedSprite.animation = 'moviendose'
-	if Input.is_action_pressed("ui_down"):
+	if Input.is_action_pressed("2p_down"):
 		velocity.y += 1
 		$AnimatedSprite.animation = 'moviendose'
 	if velocity == Vector2(0,0):
