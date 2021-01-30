@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/salir_ui.png-ace78fc189874fd0cb6740d3d5c9160d.stex"
+path="res://.import/PAUSA.png-c7aca0b8d6c562f878a0d2c0e234b6bb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UI/menu_pausa/salir_ui.png"
-dest_files=[ "res://.import/salir_ui.png-ace78fc189874fd0cb6740d3d5c9160d.stex" ]
+source_file="res://Assets/UI/Palabras/PAUSA.png"
+dest_files=[ "res://.import/PAUSA.png-c7aca0b8d6c562f878a0d2c0e234b6bb.stex" ]
 
 [params]
 
