@@ -16,7 +16,10 @@ func _ready():
 
 func _on_boton_iniciar_ui_pressed():
 	print("inicia")
+	get_tree().change_scene("res://Escenas/Tutorial.tscn")
 
 
 func _on_boton_salir_ui_pressed():
 	print("sale")
+	get_tree().quit()
+	
