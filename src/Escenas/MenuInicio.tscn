@@ -20,11 +20,10 @@ __meta__ = {
 }
 
 [node name="titulo_ui" type="TextureRect" parent="."]
-margin_left = 245.8
-margin_top = 84.2236
-margin_right = 1325.8
-margin_bottom = 753.224
-rect_scale = Vector2( 0.5, 0.5 )
+margin_left = 232.819
+margin_top = 62.1853
+margin_right = 772.819
+margin_bottom = 412.185
 texture = ExtResource( 2 )
 stretch_mode = 5
 __meta__ = {
@@ -34,16 +33,15 @@ __meta__ = {
 [node name="menu_ui" type="VBoxContainer" parent="."]
 margin_left = 459.0
 margin_top = 388.0
-margin_right = 659.0
-margin_bottom = 616.0
-rect_scale = Vector2( 0.5, 0.5 )
+margin_right = 559.0
+margin_bottom = 504.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="boton_iniciar_ui" type="TextureButton" parent="menu_ui"]
-margin_right = 200.0
-margin_bottom = 112.0
+margin_right = 100.0
+margin_bottom = 56.0
 focus_neighbour_top = NodePath("../boton_salir_ui")
 focus_neighbour_bottom = NodePath("../boton_salir_ui")
 texture_normal = ExtResource( 1 )
@@ -54,9 +52,9 @@ __meta__ = {
 }
 
 [node name="boton_salir_ui" type="TextureButton" parent="menu_ui"]
-margin_top = 116.0
-margin_right = 200.0
-margin_bottom = 228.0
+margin_top = 60.0
+margin_right = 100.0
+margin_bottom = 116.0
 focus_neighbour_top = NodePath("../boton_iniciar_ui")
 focus_neighbour_bottom = NodePath("../boton_iniciar_ui")
 texture_normal = ExtResource( 4 )
