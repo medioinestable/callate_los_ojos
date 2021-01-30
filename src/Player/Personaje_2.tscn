@@ -5,8 +5,8 @@
 [ext_resource path="res://Assets/Sprites/personajes/personaje_2_idle.JPG" type="Texture" id=3]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 33.0675
-height = 26.33
+radius = 9.40152
+height = 0.0
 
 [sub_resource type="AtlasTexture" id=2]
 flags = 4
@@ -121,8 +121,8 @@ speed = 150
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
-scale = Vector2( 0.596395, 0.596395 )
+scale = Vector2( 0.173088, 0.173088 )
 frames = SubResource( 20 )
 animation = "idle"
-frame = 2
+frame = 1
 playing = true
