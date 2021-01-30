@@ -1,57 +1,11 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://Assets/Sprites/personajes/personaje_1_idle.JPG" type="Texture" id=1]
 [ext_resource path="res://Assets/Sprites/personajes/personaje_2_idle.JPG" type="Texture" id=2]
 [ext_resource path="res://Scripts/Tutorial.gd" type="Script" id=3]
 [ext_resource path="res://Escenas/MenuPausa.tscn" type="PackedScene" id=4]
-
-[sub_resource type="AtlasTexture" id=1]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 0, 0, 105, 166 )
-
-[sub_resource type="AtlasTexture" id=2]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 105, 0, 105, 166 )
-
-[sub_resource type="AtlasTexture" id=3]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 210, 0, 105, 166 )
-
-[sub_resource type="AtlasTexture" id=4]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 315, 0, 105, 166 )
-
-[sub_resource type="AtlasTexture" id=5]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 420, 0, 105, 166 )
-
-[sub_resource type="AtlasTexture" id=6]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 525, 0, 105, 166 )
-
-[sub_resource type="AtlasTexture" id=7]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 630, 0, 105, 166 )
-
-[sub_resource type="AtlasTexture" id=8]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 735, 0, 105, 166 )
-
-[sub_resource type="SpriteFrames" id=9]
-animations = [ {
-"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
-"loop": true,
-"name": "idle",
-"speed": 14.0
-} ]
+[ext_resource path="res://Laberintos/Tutorial_laberinto.png" type="Texture" id=5]
+[ext_resource path="res://Scripts/Personaje_1.gd" type="Script" id=6]
 
 [sub_resource type="AtlasTexture" id=10]
 flags = 4
@@ -111,26 +65,94 @@ animations = [ {
 "speed": 14.0
 } ]
 
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 105, 166 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 105, 0, 105, 166 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 210, 0, 105, 166 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 315, 0, 105, 166 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 420, 0, 105, 166 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 525, 0, 105, 166 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 630, 0, 105, 166 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 735, 0, 105, 166 )
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
+"loop": true,
+"name": "idle",
+"speed": 14.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=21]
+extents = Vector2( 52.3716, 83.1625 )
+
 [node name="Tutorial" type="Node2D"]
 script = ExtResource( 3 )
 
-[node name="Personaje_1" type="AnimatedSprite" parent="."]
-position = Vector2( 597.261, 313.021 )
-frames = SubResource( 9 )
-animation = "idle"
-frame = 6
-playing = true
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 512.78, 298.769 )
+current = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 302.589, 95.1361, 308.582, 131.095, 497.369, 83.1496, 498.867, 114.614, 441.931, 340.858, 205.199, 408.282, 190.216, 83.1496 )
+
+[node name="Laberinto" type="Sprite" parent="StaticBody2D"]
+position = Vector2( 489.217, 214.667 )
+scale = Vector2( 0.692087, 0.707253 )
+texture = ExtResource( 5 )
 
 [node name="Personaje_2" type="AnimatedSprite" parent="."]
 position = Vector2( 322.077, 271.223 )
 frames = SubResource( 20 )
 animation = "idle"
+frame = 2
+playing = true
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+script = ExtResource( 6 )
+
+[node name="Personaje_1" type="AnimatedSprite" parent="KinematicBody2D"]
+position = Vector2( 597.261, 313.021 )
+frames = SubResource( 9 )
+animation = "idle"
 frame = 5
 playing = true
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 512.78, 298.769 )
-current = true
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 597.825, 314.645 )
+shape = SubResource( 21 )
 
 [node name="MenuPausa" parent="." instance=ExtResource( 4 )]
 visible = false
