@@ -1,11 +1,67 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://Assets/UI/boton_iniciar_ui.png" type="Texture" id=1]
-[ext_resource path="res://Assets/UI/titulo_imagen_ui.png" type="Texture" id=2]
-[ext_resource path="res://Assets/UI/boton_iniciar_hover_ui.png" type="Texture" id=3]
-[ext_resource path="res://Assets/UI/boton_salir_ui.png" type="Texture" id=4]
-[ext_resource path="res://Assets/UI/boton_salir_hover_ui.png" type="Texture" id=5]
+[ext_resource path="res://Assets/UI/Boton_idle.png" type="Texture" id=1]
+[ext_resource path="res://Assets/UI/Fondo.png" type="Texture" id=2]
+[ext_resource path="res://Assets/UI/Boton_Hover.png" type="Texture" id=3]
+[ext_resource path="res://Assets/UI/Palabras/Iniciar.png" type="Texture" id=4]
+[ext_resource path="res://Assets/UI/Palabras/Salir.png" type="Texture" id=5]
 [ext_resource path="res://Scripts/MenuInicio.gd" type="Script" id=6]
+[ext_resource path="res://Assets/UI/TituloPrincipal.png" type="Texture" id=7]
+[ext_resource path="res://Assets/UI/Palabras/titulo.png" type="Texture" id=8]
+[ext_resource path="res://Assets/UI/Boton_hover02.png" type="Texture" id=9]
+[ext_resource path="res://Assets/UI/Boton_idle02.png" type="Texture" id=10]
+
+[sub_resource type="Animation" id=1]
+resource_name = "MenuPrincipal_UI"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("TituloPrincipal:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 1 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("TituloPrincipal:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ Vector2( 331.349, 238.056 ), Vector2( 315, 238.056 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Fondo:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 1 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("titulo_ui:rect_rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ -3.0, 0.0 ]
+}
 
 [node name="MenuInicio" type="Control"]
 anchor_right = 1.0
@@ -19,29 +75,42 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="titulo_ui" type="TextureRect" parent="."]
-margin_left = 232.819
-margin_top = 62.1853
-margin_right = 772.819
-margin_bottom = 412.185
+[node name="Fondo" type="Sprite" parent="."]
+position = Vector2( 518.582, 298.219 )
+scale = Vector2( 1, 0.569723 )
 texture = ExtResource( 2 )
+hframes = 2
+
+[node name="TituloPrincipal" type="Sprite" parent="."]
+position = Vector2( 331.349, 238.056 )
+texture = ExtResource( 7 )
+hframes = 2
+
+[node name="titulo_ui" type="TextureRect" parent="."]
+margin_left = 223.837
+margin_top = 170.639
+margin_right = 469.837
+margin_bottom = 310.639
+rect_rotation = -3.0
+rect_scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 8 )
 stretch_mode = 5
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="menu_ui" type="VBoxContainer" parent="."]
-margin_left = 459.0
-margin_top = 388.0
-margin_right = 559.0
-margin_bottom = 504.0
+margin_left = 725.427
+margin_top = 208.492
+margin_right = 966.427
+margin_bottom = 562.492
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="boton_iniciar_ui" type="TextureButton" parent="menu_ui"]
-margin_right = 100.0
-margin_bottom = 56.0
+margin_right = 241.0
+margin_bottom = 175.0
 focus_neighbour_top = NodePath("../boton_salir_ui")
 focus_neighbour_bottom = NodePath("../boton_salir_ui")
 texture_normal = ExtResource( 1 )
@@ -51,16 +120,43 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="boton_salir_ui" type="TextureButton" parent="menu_ui"]
-margin_top = 60.0
-margin_right = 100.0
-margin_bottom = 116.0
-focus_neighbour_top = NodePath("../boton_iniciar_ui")
-focus_neighbour_bottom = NodePath("../boton_iniciar_ui")
-texture_normal = ExtResource( 4 )
-texture_hover = ExtResource( 5 )
+[node name="Iniciar" type="TextureRect" parent="menu_ui/boton_iniciar_ui"]
+margin_left = 79.3749
+margin_top = 59.3987
+margin_right = 325.375
+margin_bottom = 199.399
+rect_scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="boton_salir_ui" type="TextureButton" parent="menu_ui"]
+margin_top = 179.0
+margin_right = 241.0
+margin_bottom = 354.0
+focus_neighbour_top = NodePath("../boton_iniciar_ui")
+focus_neighbour_bottom = NodePath("../boton_iniciar_ui")
+texture_normal = ExtResource( 10 )
+texture_hover = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Salir" type="TextureRect" parent="menu_ui/boton_salir_ui"]
+margin_left = 79.3748
+margin_top = 63.0873
+margin_right = 325.375
+margin_bottom = 203.087
+rect_scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/MenuPrincipal_UI = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
 [connection signal="pressed" from="menu_ui/boton_iniciar_ui" to="." method="_on_boton_iniciar_ui_pressed"]
 [connection signal="pressed" from="menu_ui/boton_salir_ui" to="." method="_on_boton_salir_ui_pressed"]
