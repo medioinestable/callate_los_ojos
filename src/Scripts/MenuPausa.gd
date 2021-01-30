@@ -2,7 +2,7 @@ extends Control
 
 
 # Declare member variables here. Examples:
-# var a = 2
+var escape = -1
 onready var boton_continuar = $menu_pausa_ui/boton_continuar
 
 
@@ -14,10 +14,16 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
+func _input(ev):
+	if Input.is_key_pressed(KEY_ESCAPE):
+		print(escape)
+		escape = (escape+1)%2
+		if escape == 1:
+			get_tree().quit()
 
 func _on_boton_continuar_pressed():
 	print('continuar')
+	escape = -1
 	get_tree().paused = false
 	$".".hide()
 
