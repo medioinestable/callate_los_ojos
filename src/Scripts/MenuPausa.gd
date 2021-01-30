@@ -4,6 +4,8 @@ extends Control
 # Declare member variables here. Examples:
 var escape = -1
 onready var boton_continuar = $menu_pausa_ui/boton_continuar
+export(NodePath) var current_audio
+onready var node_audio = get_node(current_audio)
 
 
 # Called when the node enters the scene tree for the first time.
@@ -21,17 +23,22 @@ func _input(ev):
 		if escape == 0:
 			get_tree().paused = true
 			$'.'.show()
-			$menu_pausa_ui/boton_continuar.grab_focus()	
+			$menu_pausa_ui/boton_continuar.grab_focus()
+			print(current_audio)
+			node_audio.audio_pausado()
 		if escape == 1:
 			print(escape)
 			get_tree().paused = false
 			$".".hide()
+			node_audio.audio_despausado()
+			#current_audio.audio_despausado()
 
 func _on_boton_continuar_pressed():
 	print('continuar')
 	escape = -1
 	get_tree().paused = false
 	$".".hide()
+	node_audio.audio_despausado()
 
 
 func _on_boton_salir_pressed():
