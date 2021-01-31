@@ -17,7 +17,8 @@ _global_script_class_icons={
 
 config/name="callate_los_ojos"
 run/main_scene="res://Escenas/EscenaMenu.tscn"
-config/icon="res://icon.png"
+config/icon="res://Assets/UI/icono.png"
+config/windows_native_icon="res://Assets/UI/icono.ico"
 
 [display]
 

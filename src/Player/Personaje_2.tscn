@@ -14,27 +14,27 @@ radius = 8.05153
 height = 0.0
 
 [sub_resource type="AtlasTexture" id=2]
-atlas = ExtResource( 8 )
+atlas = ExtResource( 6 )
 region = Rect2( 0, 0, 41, 41 )
 
 [sub_resource type="AtlasTexture" id=3]
-atlas = ExtResource( 8 )
+atlas = ExtResource( 6 )
 region = Rect2( 41, 0, 41, 41 )
 
 [sub_resource type="AtlasTexture" id=4]
-atlas = ExtResource( 8 )
+atlas = ExtResource( 6 )
 region = Rect2( 82, 0, 41, 41 )
 
 [sub_resource type="AtlasTexture" id=5]
-atlas = ExtResource( 8 )
+atlas = ExtResource( 6 )
 region = Rect2( 123, 0, 41, 41 )
 
 [sub_resource type="AtlasTexture" id=6]
-atlas = ExtResource( 8 )
+atlas = ExtResource( 6 )
 region = Rect2( 164, 0, 41, 41 )
 
 [sub_resource type="AtlasTexture" id=7]
-atlas = ExtResource( 8 )
+atlas = ExtResource( 6 )
 region = Rect2( 205, 0, 41, 41 )
 
 [sub_resource type="AtlasTexture" id=8]
@@ -70,34 +70,34 @@ atlas = ExtResource( 1 )
 region = Rect2( 82, 0, 41, 41 )
 
 [sub_resource type="AtlasTexture" id=16]
-atlas = ExtResource( 6 )
+atlas = ExtResource( 8 )
 region = Rect2( 0, 0, 41, 41 )
 
 [sub_resource type="AtlasTexture" id=17]
-atlas = ExtResource( 6 )
+atlas = ExtResource( 8 )
 region = Rect2( 41, 0, 41, 41 )
 
 [sub_resource type="AtlasTexture" id=18]
-atlas = ExtResource( 6 )
+atlas = ExtResource( 8 )
 region = Rect2( 82, 0, 41, 41 )
 
 [sub_resource type="AtlasTexture" id=19]
-atlas = ExtResource( 6 )
+atlas = ExtResource( 8 )
 region = Rect2( 123, 0, 41, 41 )
 
 [sub_resource type="AtlasTexture" id=20]
-atlas = ExtResource( 6 )
+atlas = ExtResource( 8 )
 region = Rect2( 164, 0, 41, 41 )
 
 [sub_resource type="AtlasTexture" id=21]
-atlas = ExtResource( 6 )
+atlas = ExtResource( 8 )
 region = Rect2( 205, 0, 41, 41 )
 
 [sub_resource type="SpriteFrames" id=22]
 animations = [ {
 "frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ) ],
 "loop": true,
-"name": "moviendose_down",
+"name": "moviendose_up",
 "speed": 12.0
 }, {
 "frames": [ SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
@@ -117,7 +117,7 @@ animations = [ {
 }, {
 "frames": [ SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ) ],
 "loop": true,
-"name": "moviendose_up",
+"name": "moviendose_down",
 "speed": 12.0
 } ]
 
@@ -140,13 +140,11 @@ shape = SubResource( 1 )
 position = Vector2( 0, -8.4757 )
 frames = SubResource( 22 )
 animation = "idle_front"
-frame = 1
 playing = true
 
 [node name="Objeto_2_p" type="Sprite" parent="Personaje_2_k"]
-visible = false
-position = Vector2( 0, -23.0173 )
-scale = Vector2( 0.0414735, 0.0414735 )
+position = Vector2( 0, -31.588 )
+scale = Vector2( 0.1, 0.1 )
 
 [node name="collision_juntar" type="Area2D" parent="Personaje_2_k"]
 input_pickable = false
