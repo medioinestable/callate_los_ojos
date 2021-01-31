@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RightWalkSprites.png-9f11fb40bb0d4cf07996c1672eae3a3d.stex"
+path="res://.import/IdleSprites.png-279148a978bc9143e9759b111bef1748.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Cyan/RightWalkSprites.png"
-dest_files=[ "res://.import/RightWalkSprites.png-9f11fb40bb0d4cf07996c1672eae3a3d.stex" ]
+source_file="res://Assets/Sprites/Amarillo/IdleSprites.png"
+dest_files=[ "res://.import/IdleSprites.png-279148a978bc9143e9759b111bef1748.stex" ]
 
 [params]
 
