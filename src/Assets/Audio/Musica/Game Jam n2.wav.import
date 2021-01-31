@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Game Jam n2.wav-088ea424b247cf7c8b56e05c6f2af450.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Musica/Game Jam n2.wav"
+dest_files=[ "res://.import/Game Jam n2.wav-088ea424b247cf7c8b56e05c6f2af450.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

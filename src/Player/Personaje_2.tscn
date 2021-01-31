@@ -1,9 +1,10 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Assets/Sprites/personajes/personaje_1_idle.JPG" type="Texture" id=1]
 [ext_resource path="res://Scripts/Personaje_2.gd" type="Script" id=2]
 [ext_resource path="res://Assets/Sprites/personajes/personaje_2_idle.JPG" type="Texture" id=3]
 [ext_resource path="res://Scripts/Personaje_2_node.gd" type="Script" id=4]
+[ext_resource path="res://Assets/Audio/Folleys/Recoger P2.wav" type="AudioStream" id=5]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 9.40152
@@ -131,7 +132,7 @@ shape = SubResource( 1 )
 scale = Vector2( 0.173088, 0.173088 )
 frames = SubResource( 20 )
 animation = "idle"
-frame = 3
+frame = 4
 playing = true
 
 [node name="Objeto_2_p" type="Sprite" parent="Personaje_2_k"]
@@ -146,3 +147,7 @@ collision_mask = 3072
 
 [node name="collision_personaje" type="CollisionShape2D" parent="Personaje_2_k/collision_juntar"]
 shape = SubResource( 21 )
+
+[node name="recolecta" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -8.0

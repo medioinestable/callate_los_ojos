@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Nivel.wav-9a1496ccb54c64cf59ef386b4d7f0c28.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Folleys/Nivel.wav"
+dest_files=[ "res://.import/Nivel.wav-9a1496ccb54c64cf59ef386b4d7f0c28.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

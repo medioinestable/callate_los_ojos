@@ -2,7 +2,8 @@ extends Node2D
 
 
 # Declare member variables here. Examples:
-# var a = 2
+var acabo_cancion = false
+var segunda_cancion = preload("res://Assets/Audio/Musica/Game Jam Drums 1.wav")
 # var b = "text"
 
 
@@ -12,7 +13,16 @@ func _ready():
 
 func _siguiente_nivel():
 	get_tree().change_scene("res://Escenas/Nivel_1.tscn")
+	
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	if !acabo_cancion:
+		if !$AudioStreamPlayer.playing:
+			acabo_cancion = true
+			$AudioStreamPlayer.stream = segunda_cancion
+			$AudioStreamPlayer.volume_db = 1
+			$AudioStreamPlayer.play()
+			
+		

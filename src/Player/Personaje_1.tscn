@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Assets/Sprites/Cyan/IdleSprites.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Personaje_1.gd" type="Script" id=2]
@@ -7,120 +7,121 @@
 [ext_resource path="res://Scripts/Personaje_1_node.gd" type="Script" id=5]
 [ext_resource path="res://Assets/Sprites/Cyan/FrontWalkSprites.png" type="Texture" id=6]
 [ext_resource path="res://Assets/Sprites/Cyan/BackWalkSprites.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Audio/Folleys/Recoger P1.wav" type="AudioStream" id=8]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 8.17326
 height = 0.0
 
-[sub_resource type="AtlasTexture" id=27]
-atlas = ExtResource( 7 )
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 6 )
 region = Rect2( 0, 0, 41, 41 )
 
-[sub_resource type="AtlasTexture" id=28]
-atlas = ExtResource( 7 )
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 6 )
 region = Rect2( 41, 0, 41, 41 )
 
-[sub_resource type="AtlasTexture" id=29]
-atlas = ExtResource( 7 )
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 6 )
 region = Rect2( 82, 0, 41, 41 )
 
-[sub_resource type="AtlasTexture" id=30]
-atlas = ExtResource( 7 )
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 6 )
 region = Rect2( 123, 0, 41, 41 )
 
-[sub_resource type="AtlasTexture" id=31]
-atlas = ExtResource( 7 )
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 6 )
 region = Rect2( 164, 0, 41, 41 )
 
-[sub_resource type="AtlasTexture" id=32]
-atlas = ExtResource( 7 )
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 6 )
 region = Rect2( 205, 0, 41, 41 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 41, 41 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 1 )
+region = Rect2( 41, 0, 41, 41 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 41, 41 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 3 )
+region = Rect2( 41, 0, 41, 41 )
 
 [sub_resource type="AtlasTexture" id=12]
-atlas = ExtResource( 1 )
-region = Rect2( 0, 0, 41, 41 )
+atlas = ExtResource( 3 )
+region = Rect2( 82, 0, 41, 41 )
 
 [sub_resource type="AtlasTexture" id=13]
-atlas = ExtResource( 1 )
-region = Rect2( 41, 0, 41, 41 )
-
-[sub_resource type="AtlasTexture" id=21]
-atlas = ExtResource( 6 )
-region = Rect2( 0, 0, 41, 41 )
-
-[sub_resource type="AtlasTexture" id=22]
-atlas = ExtResource( 6 )
-region = Rect2( 41, 0, 41, 41 )
-
-[sub_resource type="AtlasTexture" id=23]
-atlas = ExtResource( 6 )
-region = Rect2( 82, 0, 41, 41 )
-
-[sub_resource type="AtlasTexture" id=24]
-atlas = ExtResource( 6 )
-region = Rect2( 123, 0, 41, 41 )
-
-[sub_resource type="AtlasTexture" id=25]
-atlas = ExtResource( 6 )
-region = Rect2( 164, 0, 41, 41 )
-
-[sub_resource type="AtlasTexture" id=26]
-atlas = ExtResource( 6 )
-region = Rect2( 205, 0, 41, 41 )
-
-[sub_resource type="AtlasTexture" id=18]
 atlas = ExtResource( 4 )
 region = Rect2( 0, 0, 41, 41 )
 
-[sub_resource type="AtlasTexture" id=19]
+[sub_resource type="AtlasTexture" id=14]
 atlas = ExtResource( 4 )
 region = Rect2( 41, 0, 41, 41 )
-
-[sub_resource type="AtlasTexture" id=20]
-atlas = ExtResource( 4 )
-region = Rect2( 82, 0, 41, 41 )
 
 [sub_resource type="AtlasTexture" id=15]
-atlas = ExtResource( 3 )
-region = Rect2( 0, 0, 41, 41 )
-
-[sub_resource type="AtlasTexture" id=16]
-atlas = ExtResource( 3 )
-region = Rect2( 41, 0, 41, 41 )
-
-[sub_resource type="AtlasTexture" id=17]
-atlas = ExtResource( 3 )
+atlas = ExtResource( 4 )
 region = Rect2( 82, 0, 41, 41 )
 
-[sub_resource type="SpriteFrames" id=14]
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 41, 41 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 7 )
+region = Rect2( 41, 0, 41, 41 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 7 )
+region = Rect2( 82, 0, 41, 41 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 7 )
+region = Rect2( 123, 0, 41, 41 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 7 )
+region = Rect2( 164, 0, 41, 41 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 7 )
+region = Rect2( 205, 0, 41, 41 )
+
+[sub_resource type="SpriteFrames" id=22]
 animations = [ {
-"frames": [ SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ) ],
-"loop": true,
-"name": "moviendose_up",
-"speed": 12.0
-}, {
-"frames": [ SubResource( 12 ), SubResource( 13 ) ],
-"loop": true,
-"name": "idle_front",
-"speed": 4.0
-}, {
-"frames": [ SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ) ],
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ) ],
 "loop": true,
 "name": "moviendose_down",
 "speed": 12.0
 }, {
-"frames": [ SubResource( 18 ), SubResource( 19 ), SubResource( 20 ) ],
+"frames": [ SubResource( 8 ), SubResource( 9 ) ],
+"loop": true,
+"name": "idle_front",
+"speed": 4.0
+}, {
+"frames": [ SubResource( 10 ), SubResource( 11 ), SubResource( 12 ) ],
+"loop": true,
+"name": "moviendose_right",
+"speed": 12.0
+}, {
+"frames": [ SubResource( 13 ), SubResource( 14 ), SubResource( 15 ) ],
 "loop": true,
 "name": "moviendose_left",
 "speed": 12.0
 }, {
-"frames": [ SubResource( 15 ), SubResource( 16 ), SubResource( 17 ) ],
+"frames": [ SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ) ],
 "loop": true,
-"name": "moviendose_right",
+"name": "moviendose_up",
 "speed": 12.0
 } ]
 
-[sub_resource type="CircleShape2D" id=33]
+[sub_resource type="CircleShape2D" id=23]
 radius = 21.6956
 
 [node name="Personaje_1" type="Node2D"]
@@ -137,7 +138,7 @@ shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Personaje_1_k"]
 position = Vector2( 0, -4.49492 )
-frames = SubResource( 14 )
+frames = SubResource( 22 )
 animation = "idle_front"
 playing = true
 
@@ -152,5 +153,9 @@ collision_layer = 3072
 collision_mask = 3072
 
 [node name="collision_personaje" type="CollisionShape2D" parent="Personaje_1_k/collision_juntar"]
-shape = SubResource( 33 )
+shape = SubResource( 23 )
+
+[node name="recolecta" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -8.0
 [connection signal="area_entered" from="Personaje_1_k/collision_juntar" to="." method="_on_collision_juntar_area_entered"]
