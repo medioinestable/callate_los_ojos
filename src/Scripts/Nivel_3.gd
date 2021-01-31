@@ -15,4 +15,4 @@ func _ready():
 #func _process(delta):
 #	pass
 func _siguiente_nivel():
-	get_tree().change_scene("res://Escenas/MenuInicio.tscn")
+	get_tree().change_scene("res://Escenas/Nivel_1.tscn")
