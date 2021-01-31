@@ -8,9 +8,10 @@
 [ext_resource path="res://Assets/Sprites/objetos/refresco.png" type="Texture" id=6]
 [ext_resource path="res://Assets/Audio/Musica/Game Jam n3.wav" type="AudioStream" id=7]
 [ext_resource path="res://Assets/Sprites/objetos/caja_pizza.png" type="Texture" id=8]
-[ext_resource path="res://Laberintos/Tutorial_top.png" type="Texture" id=9]
+[ext_resource path="res://Laberintos/Nv00_top.png" type="Texture" id=9]
 [ext_resource path="res://Scripts/Tema_tutorial.gd" type="Script" id=10]
 [ext_resource path="res://Assets/Audio/Folleys/Nivel.wav" type="AudioStream" id=11]
+
 
 [node name="Nivel_3" type="Node2D"]
 script = ExtResource( 5 )

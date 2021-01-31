@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Tutorial_piso.png-aa05bab8ad64962a8974c9dc7328e872.stex"
+path="res://.import/Nv00_top-CyanCollider.png-739c1f0640d20b6dad812e54953af42a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Laberintos/Tutorial_piso.png"
-dest_files=[ "res://.import/Tutorial_piso.png-aa05bab8ad64962a8974c9dc7328e872.stex" ]
+source_file="res://Laberintos/Nv00_top-CyanCollider.png"
+dest_files=[ "res://.import/Nv00_top-CyanCollider.png-739c1f0640d20b6dad812e54953af42a.stex" ]
 
 [params]
 

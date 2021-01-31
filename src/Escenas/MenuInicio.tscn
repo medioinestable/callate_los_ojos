@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Assets/UI/Boton_idle.png" type="Texture" id=1]
 [ext_resource path="res://Assets/UI/Fondo.png" type="Texture" id=2]
@@ -10,8 +10,6 @@
 [ext_resource path="res://Assets/UI/Palabras/titulo.png" type="Texture" id=8]
 [ext_resource path="res://Assets/UI/Boton_hover02.png" type="Texture" id=9]
 [ext_resource path="res://Assets/UI/Boton_idle02.png" type="Texture" id=10]
-[ext_resource path="res://Assets/Audio/Musica/Game Jam Tema Principal.wav" type="AudioStream" id=11]
-[ext_resource path="res://Assets/Audio/Folleys/Enter.wav" type="AudioStream" id=12]
 
 [sub_resource type="Animation" id=1]
 resource_name = "MenuPrincipal_UI"
@@ -160,12 +158,5 @@ __meta__ = {
 anims/MenuPrincipal_UI = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 11 )
-autoplay = true
-
-[node name="Enter" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 12 )
 [connection signal="pressed" from="menu_ui/boton_iniciar_ui" to="." method="_on_boton_iniciar_ui_pressed"]
 [connection signal="pressed" from="menu_ui/boton_salir_ui" to="." method="_on_boton_salir_ui_pressed"]
