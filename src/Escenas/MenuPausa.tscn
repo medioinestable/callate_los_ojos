@@ -61,6 +61,17 @@ focus_neighbour_bottom = NodePath("../boton_salir")
 texture_normal = ExtResource( 3 )
 texture_hover = ExtResource( 5 )
 
+[node name="Continuar" type="TextureRect" parent="menu_pausa_ui/boton_continuar"]
+margin_left = 51.118
+margin_top = 43.694
+margin_right = 297.118
+margin_bottom = 183.694
+rect_scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="boton_salir" type="TextureButton" parent="menu_pausa_ui"]
 margin_top = 179.0
 margin_right = 241.0
@@ -70,30 +81,19 @@ focus_neighbour_bottom = NodePath("../boton_continuar")
 texture_normal = ExtResource( 11 )
 texture_hover = ExtResource( 10 )
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/MenuPausa_UI = ExtResource( 1 )
-anims/MenuPrincipal_UI = ExtResource( 7 )
-
-[node name="Continuar" type="TextureRect" parent="."]
-margin_left = 783.904
-margin_top = 286.533
-margin_right = 1029.9
-margin_bottom = 426.533
-rect_scale = Vector2( 0.6, 0.6 )
-texture = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Salir" type="TextureRect" parent="."]
-margin_left = 787.271
-margin_top = 479.597
-margin_right = 1033.27
-margin_bottom = 619.597
+[node name="Salir" type="TextureRect" parent="menu_pausa_ui/boton_salir"]
+margin_left = 54.485
+margin_top = 57.758
+margin_right = 300.485
+margin_bottom = 197.758
 rect_scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 12 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/MenuPausa_UI = ExtResource( 1 )
+anims/MenuPrincipal_UI = ExtResource( 7 )
 [connection signal="pressed" from="menu_pausa_ui/boton_continuar" to="." method="_on_boton_continuar_pressed"]
 [connection signal="pressed" from="menu_pausa_ui/boton_salir" to="." method="_on_boton_salir_pressed"]
