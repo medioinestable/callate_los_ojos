@@ -16,6 +16,9 @@ func agarra_objeto(textura_objeto):
 	tiene_objeto = true	
 	#print(tiene_objeto)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+
+
+
+func _on_collision_juntar_area_entered(area):
+	if $'../Personaje_2'.tiene_objeto_2 && tiene_objeto:	
+		print('ganaste!')
