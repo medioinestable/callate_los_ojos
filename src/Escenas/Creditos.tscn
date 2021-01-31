@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Player/Personaje_2.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player/Personaje_1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Audio/Musica/Game Jam Extra Track 1.wav" type="AudioStream" id=3]
+[ext_resource path="res://Assets/UI/Fondo.png" type="Texture" id=4]
+[ext_resource path="res://Assets/UI/creditos.png" type="Texture" id=5]
+[ext_resource path="res://Assets/UI/gracias.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Sprites/medio_inestable_solo_2.png" type="Texture" id=7]
+
+[node name="Creditos" type="Node2D"]
+
+[node name="Fondo" type="Sprite" parent="."]
+position = Vector2( 523.955, 298.924 )
+scale = Vector2( 0.599306, 0.599306 )
+texture = ExtResource( 4 )
+
+[node name="Personaje_1" parent="." instance=ExtResource( 2 )]
+position = Vector2( 346.45, 341.696 )
+scale = Vector2( 7, 7 )
+
+[node name="Personaje_2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 669.378, 269.711 )
+scale = Vector2( 7, 7 )
+
+[node name="border" type="StaticBody2D" parent="."]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="border"]
+polygon = PoolVector2Array( -0.51799, 0.892883, 3.97693, 600.216, 1024.32, 603.212, 1021.33, 0.892883, 44.4312, 2.39119, 42.9329, -12.5919, 1045.3, -15.5885, 1045.3, 622.69, -24.4909, 624.189, -25.9892, -23.08, 72.8991, -29.0733, 33.9431, 0.892883, 17.4617, 2.39119 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+autoplay = true
+
+[node name="gracias" type="Sprite" parent="."]
+position = Vector2( 505.46, 88.7392 )
+scale = Vector2( 1.0085, 1.0085 )
+texture = ExtResource( 6 )
+
+[node name="creditos" type="Sprite" parent="."]
+position = Vector2( 250.695, 359 )
+texture = ExtResource( 5 )
+
+[node name="medio_inestable_solo_2" type="Sprite" parent="."]
+position = Vector2( 927.412, 558.072 )
+scale = Vector2( 0.544415, 0.544415 )
+texture = ExtResource( 7 )
