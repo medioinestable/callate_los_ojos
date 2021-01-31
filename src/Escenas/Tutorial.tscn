@@ -15,6 +15,7 @@
 script = ExtResource( 3 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
+visible = false
 position = Vector2( 512.78, 298.769 )
 current = true
 
@@ -66,20 +67,21 @@ scale = Vector2( 0.857743, 0.707253 )
 texture = ExtResource( 5 )
 
 [node name="Objeto_1" parent="." instance=ExtResource( 8 )]
-position = Vector2( 518.869, 285.052 )
+position = Vector2( 261.869, 201.052 )
 scale = Vector2( 0.15, 0.15 )
 sprite_textura = ExtResource( 9 )
 
 [node name="Objeto_2" parent="." instance=ExtResource( 8 )]
-position = Vector2( 462.803, 287.215 )
+position = Vector2( 546.803, 495.215 )
 scale = Vector2( 0.2, 0.2 )
 sprite_textura = ExtResource( 10 )
 
 [node name="Personaje_1" parent="." instance=ExtResource( 1 )]
-position = Vector2( 451.828, 376.474 )
+position = Vector2( 221.976, 298.075 )
+nivel = NodePath("..")
 
 [node name="Personaje_2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 536.43, 197.416 )
+position = Vector2( 751.137, 280.27 )
 
 [node name="MenuPausa" parent="." instance=ExtResource( 4 )]
 visible = false
