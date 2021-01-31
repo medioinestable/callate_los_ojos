@@ -1,0 +1,59 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Escenas/MenuPausa.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player/Personaje_2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Player/Personaje_1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Escenas/Objeto_1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scripts/Nivel_3.gd" type="Script" id=5]
+[ext_resource path="res://Assets/Sprites/objetos/refresco.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Audio/Musica/Game_Jam_n1.wav" type="AudioStream" id=7]
+[ext_resource path="res://Assets/Sprites/objetos/caja_pizza.png" type="Texture" id=8]
+[ext_resource path="res://Laberintos/Tutorial_top.png" type="Texture" id=9]
+[ext_resource path="res://Scripts/Tema_tutorial.gd" type="Script" id=10]
+
+[node name="Nivel_3" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="Collider_amarillo_rigid" type="StaticBody2D" parent="."]
+
+[node name="Collider_amarillo-1" type="CollisionPolygon2D" parent="Collider_amarillo_rigid"]
+polygon = PoolVector2Array( 594.779, 121.409, 536.345, 172.351, 560.318, 227.789, 699.661, 191.829 )
+
+[node name="Collider_cyan_rigid" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="Collider_cyan-1" type="CollisionPolygon2D" parent="Collider_cyan_rigid"]
+polygon = PoolVector2Array( 441.952, 407.585, 651.715, 383.612, 602.271, 425.565, 441.952, 439.05 )
+
+[node name="Laberinto" type="Sprite" parent="."]
+position = Vector2( 522.16, 232.238 )
+scale = Vector2( 0.929247, 0.678142 )
+texture = ExtResource( 9 )
+
+[node name="Personaje_1" parent="." instance=ExtResource( 3 )]
+position = Vector2( 719.188, 271.194 )
+nivel = NodePath("..")
+
+[node name="Personaje_2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 398.55, 293.668 )
+
+[node name="Objeto_1" parent="." instance=ExtResource( 4 )]
+position = Vector2( 455.485, 145.336 )
+scale = Vector2( 0.15, 0.15 )
+sprite_textura = ExtResource( 8 )
+
+[node name="Objeto_2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 334.122, 428.516 )
+scale = Vector2( 0.2, 0.2 )
+sprite_textura = ExtResource( 6 )
+
+[node name="MenuPausa" parent="." instance=ExtResource( 1 )]
+visible = false
+current_audio = NodePath("../AudioStreamPlayer")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
+stream = ExtResource( 7 )
+autoplay = true
+script = ExtResource( 10 )
