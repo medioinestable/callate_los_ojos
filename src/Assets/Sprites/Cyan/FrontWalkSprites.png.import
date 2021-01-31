@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Tutorial_laberinto.png-fc1eb6942694acf3b444f70a5245c902.stex"
+path="res://.import/FrontWalkSprites.png-793b416856d315248a965d6e64d813c4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Laberintos/Tutorial_laberinto.png"
-dest_files=[ "res://.import/Tutorial_laberinto.png-fc1eb6942694acf3b444f70a5245c902.stex" ]
+source_file="res://Assets/Sprites/Cyan/FrontWalkSprites.png"
+dest_files=[ "res://.import/FrontWalkSprites.png-793b416856d315248a965d6e64d813c4.stex" ]
 
 [params]
 
