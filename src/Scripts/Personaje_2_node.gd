@@ -13,6 +13,7 @@ func _ready():
 
 func agarra_objeto_2(textura_objeto):
 	$Personaje_2_k/Objeto_2_p.texture = textura_objeto
+	$recolecta.play()
 	tiene_objeto_2 = true	
 	#print(tiene_objeto_2)
 

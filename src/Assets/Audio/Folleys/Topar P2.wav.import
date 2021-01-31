@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Topar P2.wav-45ce5b5271cd8732d4dbf471ddda4184.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Folleys/Topar P2.wav"
+dest_files=[ "res://.import/Topar P2.wav-45ce5b5271cd8732d4dbf471ddda4184.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

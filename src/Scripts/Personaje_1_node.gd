@@ -13,6 +13,7 @@ func _ready():
 
 func agarra_objeto(textura_objeto):
 	$Personaje_1_k/Objeto_1_p.texture = textura_objeto
+	$recolecta.play()
 	tiene_objeto = true	
 	#print(tiene_objeto)
 
@@ -24,4 +25,11 @@ func _on_collision_juntar_area_entered(area):
 		print('ganaste!')
 		$'../Personaje_2'.tiene_objeto_2 = false
 		tiene_objeto = false
-		get_node(nivel)._siguiente_nivel()
+		$'../AudioStreamPlayer'.stop()
+		$'../Gana'.play()		
+		$'../Timer_final'.start()
+		
+
+
+func _on_Timer_final_timeout():
+	get_node(nivel)._siguiente_nivel()

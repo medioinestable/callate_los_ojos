@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Menu.wav-900db70f56124ee1dd88b73f1a5610aa.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Folleys/Menu.wav"
+dest_files=[ "res://.import/Menu.wav-900db70f56124ee1dd88b73f1a5610aa.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
