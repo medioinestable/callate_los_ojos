@@ -27,20 +27,17 @@ position = Vector2( 513.134, 303.306 )
 scale = Vector2( 0.980392, 0.584693 )
 texture = ExtResource( 8 )
 hframes = 2
-frame = 1
 
 [node name="Pausa_Burbuja" type="Sprite" parent="."]
-position = Vector2( 285, 215 )
+position = Vector2( 325, 220 )
 texture = ExtResource( 9 )
 hframes = 2
-frame = 1
 
 [node name="pausa_ui" type="TextureRect" parent="."]
 margin_left = 167.673
 margin_top = 142.858
 margin_right = 413.673
 margin_bottom = 282.858
-rect_rotation = -3.0
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
