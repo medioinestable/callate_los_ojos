@@ -1,4 +1,5 @@
 # ¡Cállate los ojos!
+![titulo_principal]https://cdn.discordapp.com/attachments/803813064696266786/805610018992160778/TituloPrincipal.jpg
 Videojuego creado para el Global Game Jam 2021
 
 ¡Cállate los ojos! ¿Cómo crees que su papá le tiró sus lentes favoritos a la basura?, si eran de él, ¿qué necesidad de verdad? 
